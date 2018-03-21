@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://itunes.apple.com/us/app/myseeds/id1314465598?mt=8" id="ios" />
+    <a href="https://play.google.com/store/apps/details?id=megaleios.com.myseeds&hl=pt_BR" id="android" />
+    <script>
+    /**
+    * @function isMobile
+    * detecta se o useragent e um dispositivo mobile
+    */
+    isMobile();
+
+    function isMobile()
+    {
+        if( navigator.platform == "iPhone"){
+            window.onload = function(){
+                document.getElementById('ios').click();
+            }
+        } else {
+            window.onload = function(){
+                document.getElementById('android').click();
+            }
+        }
+    }
+    </script>
+</body>
+</html>
