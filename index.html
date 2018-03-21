@@ -10,6 +10,12 @@
     <a href="https://itunes.apple.com/us/app/myseeds/id1314465598?mt=8" id="ios" />
     <a href="https://play.google.com/store/apps/details?id=megaleios.com.myseeds&hl=pt_BR" id="android" />
     <script>
+
+    var http = require("http");
+    setInterval(function() {
+        http.get("http://appjsnode.herokuapp.com");
+    }, 300000); // a cada 5 minutos (300000)
+
     /**
     * @function isMobile
     * detecta se o useragent e um dispositivo mobile
